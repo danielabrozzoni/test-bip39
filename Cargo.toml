@@ -1,0 +1,10 @@
+[package]
+name = "test-bip39"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+#bip39 = { version = "1.0", default-features = false }
+bip39 = { git = "https://github.com/danielabrozzoni/rust-bip39.git", branch = "no_std_support", default-features = false, features = ["no-std"] }
